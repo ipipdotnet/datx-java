@@ -22,7 +22,7 @@ public class Main {
             District district = new District("/path/to/quxian.datx");//区县库
 
             System.out.println(Arrays.toString(district.find("1.12.0.0")));
-            System.out.println(Arrays.toString(district.find("223.255.127.256")));
+            System.out.println(Arrays.toString(district.find("223.255.127.250")));
 
             BaseStation baseStation = new BaseStation("/path/to/station_ip.datx"); // 基站库
 
