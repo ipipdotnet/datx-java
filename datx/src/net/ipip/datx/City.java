@@ -48,7 +48,7 @@ public class City
             long end = Util.bytesToLong(data[start + pos], data[start + pos+1], data[start + pos+2], data[start + pos+3]);
             if (val > end) {
                 low = mid + 1;
-            } else if (val < s) {
+            } else if (val <= s) {
                 high = mid - 1;
             } else {
 
