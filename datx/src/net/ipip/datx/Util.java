@@ -51,4 +51,15 @@ public class Util {
         }
         return l;
     }
+
+    public static String ipLong2String(long ipLong) {
+        int a = ((int) ipLong) >> 24;
+        if (a < 0) {
+            a = (a & 0x7F) + 128;
+        }
+        long b = ((int) ipLong & 0x00FFFFFF) >> 16;
+        long c = ((int) ipLong & 0x0000FFFF) >> 8;
+        long d = ((int) ipLong & 0x000000FF);
+        return a + "." + b + "." + c + "." + d;
+    }
 }
