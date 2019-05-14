@@ -37,6 +37,10 @@ public class Main {
 
             System.out.println(Arrays.toString(baseStation.find("8.8.8.8")));
             System.out.println(Arrays.toString(baseStation.find("223.221.121.0")));
+            
+            // store2csv
+            String csvPath = "/path/save/IpTemp.csv";
+            city.checkAndStore2CSV(csvPath);
 
         } catch (IOException ioex) {
             ioex.printStackTrace();
